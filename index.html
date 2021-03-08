@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="assets/styles/styles.css">
+    <link rel="stylesheet" href="assets/styles/tailwind.min.css">
+    <!-- Favicon -->
+    <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon">
+    <title>IKAE</title>
+</head>
+<body>
+
+    <nav class="flex items-center justify-end flex-wrap w-full h-12 fixed z-50">
+        <div class="w-full flex justify-between mx-6 my-10" id="nav-content">
+            <img src="assets/img/logo.png" class="w-16 lg:w-28 cursor-pointer" alt="Ikae logo">
+            <ul class="list-reset flex flex-row justify-between items-center hover:text-white text-sx lg:text-md font-bold transition duration-500">
+                <li class="pr-10">
+                    <a class="shop" href="">SHOP</a>
+                </li>
+                <li class="pr-10">
+                    <a href="">COLLECTION</a>
+                </li>
+                <li class="pr-10">
+                    <a href="">BLOG</a>
+                </li>
+                <li class="pr-10">
+                    <a href="">CONTACT</a>
+                </li>
+                <li class="">
+                    <div class="lupa-container w-6 flex justify-end">
+                        <img class="lupa w-6" src="assets/icons/search.png">
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="h-screen flex items-center justify-center pb-36">
+
+        <div class="w-2/4 lg:w-full text-center font-bold tracking-widest leading-20 text-5xl lg:text-7xl">
+            <h1 class="animate-pulse">FRESH FURNITURE</h1>
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <section class="about-container h-screen flex flex-col justify-evenly py-24 lg:py-20 px-24 lg:px-36">
+            <div class="w-full h-12 mb-4 font-bold tracking-wider text-3xl">
+                <h2>about us</h2>
+            </div>
+            <div class="w-full flex flex-col lg:flex-row justify-between font-semibold">
+                <div class="w-full lg:w-2/6 h-auto lg:h-80 pb-10">
+                    <h3 class="w-3/4 lg:w-2/3 text-2xl pb-6">we provide good furniture</h3>
+                    <p class="w-fulll lg:w-5/6 leading-relaxed tradcking-wide text-sx lg:text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum hic facilis doloremque. Voluptatum voluptas distinctio ex quibusdam dolore odit veritatis consectetur debitis, illum aperiam reiciendis similique laudantium omnis nihil neque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, delectus blanditiis!</p>
+                </div>
+                <div class="w-full lg:w-1/6 h-auto lg:h-80 pb-10">
+                    <h3 class="w-2/3 text-2xl pb-6">our specialization</h3>
+                    <div class="w-full flex justify-between flex-row lg:flex-col">
+                        <div class="pb-2 flex flex-col">
+                            <img class="pb-2" src="assets/icons/delivery.png">
+                            <p class="">DELIVERY</p>
+                        </div>
+                        <div class="pb-2 flex flex-col">
+                            <img class="pb-2" src="assets/icons/support.png">
+                            <p>SUPPORT</p>
+                        </div>
+                        <div class="pb-2 flex flex-col">
+                            <img class="pb-2" src="assets/icons/montage.png">
+                            <p>MONTAGE</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="background-image w-full lg:w-2/6 h-80"></div>
+            </div>
+        </section>
+
+        <section class="categories-container h-screen flex flex-col justify-evenly pt-24 lg:pt-20">
+            <div class="w-full h-12 mb-4 px-24 lg:px-36 font-bold tracking-wider text-3xl">
+                <h2>categories</h2>
+            </div>
+            <div class="images-container w-full flex flex-wrap lg:flex-row">
+                <div class="images-container w-1/2 lg:w-1/4 h-60 lg:h-96 flex items-center relative" onmouseover="ocultarTxt('bath')" onmouseout="mostrarTxt('bath')">
+                    <div class="images-container-img bathroom w-full h-full justify-center"></div>
+                    <h4 id="bath" class="images-container-txt hide w-full text-2xl text-center text-white font-bold z-20 absolute px-32 lg:px-24">BATHROOM</h4>
+                </div>
+                <div class="images-container w-1/2 lg:w-1/4 h-60 lg:h-96 flex items-center relative" onmouseover="ocultarTxt('kitchen')" onmouseout="mostrarTxt('kitchen')">
+                    <div class="images-container-img kitchen w-full h-full justify-center"></div>
+                    <h4 id="kitchen" class="images-container-txt hide w-full text-2xl text-center text-white font-bold z-20 absolute px-32 lg:px-24">KITCHEN</h4>
+                </div>
+                <div class="images-container w-1/2 lg:w-1/4 h-60 lg:h-96 flex items-center relative" onmouseover="ocultarTxt('bed')" onmouseout="mostrarTxt('bed')">
+                    <div class="images-container-img bedroom w-full h-full justify-center"></div>
+                    <h4 id="bed" class="images-container-txt hide w-full text-2xl text-center text-white font-bold z-20 absolute px-32 lg:px-24">BED ROOM</h4>
+                </div>
+                <div class="images-container w-1/2 lg:w-1/4 h-60 lg:h-96 flex items-center relative" onmouseover="ocultarTxt('living')" onmouseout="mostrarTxt('living')">
+                    <div class="images-container-img livingroom w-full h-full justify-center"></div>
+                    <h4 id="living" class="images-container-txt hide w-full text-2xl text-center text-white font-bold z-20 absolute px-32 lg:px-24">LIVING ROOM</h4>
+                </div>
+            </div>
+            <footer class="flex items-center justify-center h-auto tracking-widest font-semibold py-2 lg:py-8">
+                <p>©IKAE 2021 | All rights reserved</p>
+            </footer>
+        </section>
+        <script src="assets/js/hover.js"></script>
+    </main>
+</body>
+</html>

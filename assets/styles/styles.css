@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+/* Colores */
+
+:root {
+    --beige: #b0a3a3;
+    --dark-gray: #4a4a4a;
+    --medium-gray: #bcbcbc;
+    --gray:#ececec;
+    --light-gray: #f3f3f3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, li {
+    color: var(--dark-gray);
+}
+
+h3 {
+    color: var(--beige);
+}
+
+li {
+    color: var(--medium-gray);
+}
+
+li a.shop {
+    color: var(--dark-gray);
+}
+
+li:hover {
+    color: var(--dark-gray);
+    transition: all .5s ease-in;
+}
+
+header {
+    background-image: url(/assets/img/header.jpg);
+    background-position-y: bottom;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav .lupa {
+    cursor: pointer;
+}
+
+nav .lupa-container {
+    cursor: text;
+}
+
+nav .lupa-container:hover {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 4px;
+    animation: crecerLupa;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-duration: .5s;
+}
+
+@keyframes crecerLupa {
+    0% {
+        width: 12px;
+    }
+    50% {
+        width: 100px;
+    }
+    100% {
+        width: 200px;
+    }
+}
+
+main section.about-container {
+    background-color: var(--gray);
+    color: var(--dark-gray);
+}
+
+main section.about-container img {
+    width: 25%;
+}
+
+main section.about-container div.background-image {
+    background-image: url(/assets/img/image.jpg);
+    background-position-y: bottom;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main section.categories-container {
+    background-color: var(--light-gray);
+}
+
+main section.categories-container div.images-container {
+    overflow: hidden;
+    cursor: pointer;
+}
+
+main section.categories-container div.images-container-img {
+    background-color: rgba(0,0,0,0.8);
+    filter:brightness(0.6);
+    transition: transform 2s ease-in;
+}
+
+main section.categories-container div.images-container-img:hover {
+    background-color: rgba(0,0,0,0);
+    filter:brightness(1);
+    transform: scale(1.5);
+}
+
+main section.categories-container div.bathroom {
+    background-image: url(/assets/img/bathroom.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main section.categories-container div.kitchen {
+    background-image: url(/assets/img/kitchen.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main section.categories-container div.bedroom {
+    background-image: url(/assets/img/bedroom.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main section.categories-container div.livingroom {
+    background-image: url(/assets/img/livingroom.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer p {
+    color: var( --medium-gray);
+}
+
+.hideTxt{
+    display: none;
+}
