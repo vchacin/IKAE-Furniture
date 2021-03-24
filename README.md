@@ -13,4 +13,4 @@ Asegúrese de actualizar las pruebas según corresponda.
 
 ## Links
 
-[Trello](https://trello.com/b/GT8yVND7/floristeria-ar)
+[IKAE-Furniture](https://ikae-furniture.vercel.app/)
